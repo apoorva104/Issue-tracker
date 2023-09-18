@@ -1,0 +1,37 @@
+<!-- views/home.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Issue Tracker - Home</title>
+    <link rel="stylesheet" type="text/css" href="/home.css">
+</head>
+
+<body>
+    <header>
+        <h1>Issue Tracker</h1>
+        <a href="/projects/new">Create New Project</a>
+    </header>
+
+    <section class="project-list">
+        <h2>List of Projects</h2>
+        <ul>
+            <% projects.forEach(project=> { %>
+                <li>
+                    <h3><a href="/projects/<%= project._id %>"> <b> Name: <%= project.name %></b>
+
+                        </a></h3>
+                    <p>
+                        Description: <%= project.description %>
+                    </p>
+                    <p>Author: <%= project.author %>
+                    </p>
+                    <p> Label: <%= project.label %>
+                    </p>
+                </li>
+                <% }); %>
+        </ul>
+    </section>
+</body>
+
+</html>

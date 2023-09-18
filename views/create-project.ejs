@@ -1,0 +1,46 @@
+<!-- views/create-project.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create New Project</title>
+    <link rel="stylesheet" type="text/css" href="/createProject.css">
+</head>
+
+<body>
+    <header>
+        <h1>Create New Project</h1>
+        <a href="/">Back to Home</a>
+    </header>
+
+    <section class="project-form">
+        <form method="POST" action="/projects">
+            <label for="name">Project Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <!-- <label for="labels">Labels (comma-separated):</label>
+            <input type="text" id="labels" name="labels"> -->
+            <label for="labels"> Labels </label>
+
+            <select name="labels" id="labels">
+                <option value="React">React</option>
+                <option value="Node">Node</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Data Structure">Data Structure</option>
+                <option value="Database">Database</option>
+                <option value="Angular">Angular</option>
+            </select> <br><br>
+
+            <button type="submit">Create Project</button>
+        </form>
+    </section>
+</body>
+
+</html>

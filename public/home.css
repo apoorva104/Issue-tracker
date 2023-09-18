@@ -1,0 +1,72 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Page title styles */
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    color: #007BFF;
+}
+
+/* Project list styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: Brush Script MT;
+}
+
+/* Links styles */
+a {
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Create project button styles */
+.create-button {
+    display: block;
+    background-color: black;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border: black;
+    border-radius: 2px;
+}
+
+.create-button:hover {
+    background-color: #0056b3;
+}

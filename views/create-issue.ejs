@@ -1,0 +1,53 @@
+<!-- views/create-issue.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create New Issue</title>
+  <link rel="stylesheet" type="text/css" href="/createIssue.css">
+</head>
+
+<body>
+  <header>
+    <h1>Create New Issue</h1>
+    <a href="/">Back to Home</a>
+  </header>
+
+  <section class="issue-form">
+    <form method="POST" action="/issues">
+      <label for="title">Issue Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="descconst issues = await Issue.find({ projectId });ription">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <!-- <label for="labels">Labels (comma-separated):</label>
+      <input type="text" id="labels" name="labels"> -->
+
+      <label for="labels"> Labels </label>
+
+      <select name="labels" id="labels">
+        <option value="React">React</option>
+        <option value="Node">Node</option>
+        <option value="Java">Java</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Data Structure">Data Structure</option>
+        <option value="Database">Database</option>
+        <option value="Angular">Angular</option>
+      </select> <br><br>
+
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required>
+
+      <label for="projectId">Project ID:</label>
+      <!-- <input type="text" id="projectId" name="projectId" required> -->
+      <input type="hidden" id="projectId" name="projectId" value="<%= projectId%>">
+
+
+      <button type="submit">Create Issue</button>
+    </form>
+  </section>
+  <%= project.id %>
+</body>
+
+</html>

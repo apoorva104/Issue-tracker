@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Page title styles */
+h1 {
+    font-size: 24px;
+}
+
+/* Form container styles */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Create button styles */
+.create-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.create-button:hover {
+    background-color: #0056b3;
+}
