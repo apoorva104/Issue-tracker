@@ -3,10 +3,14 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
 
-mongoose.connect('mongodb://localhost/issueTracker', {
+// mongoose.connect('mongodb://localhost/issueTracker', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+mongoose.connect('mongodb+srv://srivastavaapoorva104:QApKUdDRoHIUddx7@issuetracker.ldjqkn6.mongodb.net/?retryWrites=true&w=majority',{
   useNewUrlParser: true,
   useUnifiedTopology: true,
-});
+})
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
