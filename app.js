@@ -30,7 +30,7 @@ app.use('/issues', issueRoutes);
 //app.use('/', homeRoute);
 
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8090;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
